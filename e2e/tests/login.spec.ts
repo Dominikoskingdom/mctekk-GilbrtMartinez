@@ -5,7 +5,7 @@ import { Users } from '../../fixtures/data/users';
 test.describe('Login Tests', () => {
   let login: userLoginClass;
 
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({ page, baseURL }) => {
     login = new userLoginClass(page);
     await login.visitUrl('/');
   });

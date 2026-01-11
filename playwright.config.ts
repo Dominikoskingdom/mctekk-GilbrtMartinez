@@ -1,7 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const baseURL: string = process.env.BASE_URL ?? 'https://www.saucedemo.com/';
+
 export default defineConfig({
   testDir: './e2e',
+  
 
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -11,7 +14,7 @@ export default defineConfig({
   reporter: [['html', { open: 'never' }]],
 
   use: {
-    baseURL: 'https://www.saucedemo.com',
+    baseURL: baseURL,
     headless: true,
     trace: 'on-first-retry',
     testIdAttribute: 'data-test',
