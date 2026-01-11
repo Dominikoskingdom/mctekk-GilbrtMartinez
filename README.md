@@ -154,8 +154,14 @@ Users.forEach(user => {
 
 ## 📌 Node Version Note
 
-This project requires **Node.js v18.9.0 or greater**.
+This project requires **Node.js v20.9.0 or greater**.
 Older versions may produce linting or runtime errors.
+install the correct version using **nvm**
+
+```bash
+nvm install 20.9.0
+nvm use 20.9.0
+```
 
 ---
 
@@ -165,11 +171,3 @@ Older versions may produce linting or runtime errors.
 * **Playwright Docs:** [https://playwright.dev/docs/intro](https://playwright.dev/docs/intro)
 
 ---
-
-## 📝 Notes
-
-* Tests are designed for stability, using reliable selectors and best practices.
-* You can add more fixtures, tests, and pages easily.
-* Ready for CI/CD integration.
-
-```
