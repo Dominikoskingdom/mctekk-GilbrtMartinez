@@ -18,17 +18,16 @@ test.describe('Cart Tests - Data Driven', () => {
       // Add all products dynamically with random numbers- 
       // if ran is = 0 add one to make sure theres no errors 
       let high = Math.floor(Math.random() * 6)
-      if ( high == 0 ){
-        high+1
+      if ( high === 0 ){
+        high++
       }
-      console.log(high)
       for (const product of Products.slice(0, high)) {
         await productsPage.addProductByName(product);
       }
 
       await productsPage.goToCart();
 
-      // Validate cart badge shows 3 items
+      // Validate cart badge shows X items
       await expect(await productsPage.cartBadge()).toHaveText(high.toString());
     });
   });
