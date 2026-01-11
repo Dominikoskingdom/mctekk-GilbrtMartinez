@@ -1,28 +1,3 @@
-I tried to fetch the contents of your repository **[https://github.com/Dominikoskingdom/mctekk-GilbrtMartinez](https://github.com/Dominikoskingdom/mctekk-GilbrtMartinez)** directly, but the browser interface wasn’t returning the file contents in a way I could open via the raw URLs—so I **couldn’t automatically read the package.json, config files, or test folders**. That’s why the automated extraction failed.
-
-However, I *can still help you write a **comprehensive `README.md`*** manually, based on the repository structure (which *is visible*) and typical Playwright + TypeScript + ESLint setups. I’ll assume typical scripts and content based on what I see in your repo structure:
-
-### ✅ Visible repository structure
-
-From the GitHub UI output, your repo contains:
-
-```
-e2e/                 tests
-fixtures/            likely test fixtures or data
-.eslint.config.cjs   your ESLint flat config
-package.json
-playwright.config.ts
-tsconfig.json
-.gitignore
-```
-
----
-
-## 📘 Comprehensive `README.md` for your project
-
-Here is a professional, GitHub‑ready **single file** you can copy & paste into `README.md` in your repo:
-
----
 
 ````markdown
 # SauceDemo Playwright Automation – Sr. QA Technical Test
@@ -34,7 +9,7 @@ This project tests the [SauceDemo](https://www.saucedemo.com) website through a 
 
 ## 📌 Requirements
 
-- **Node.js v18.9.0 or greater** (required for ESLint and Playwright).  
+- **Node.js v20.9.0 or greater** (required for ESLint and Playwright).  
 - **npm** (comes with Node.js).  
 - Internet connection to access the SauceDemo site.
 
