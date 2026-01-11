@@ -1,0 +1,26 @@
+{
+  "name": "mctekk-gilbrtmartinez",
+  "version": "1.0.0",
+  "description": "Prueba Técnica – Sr. QA Automation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.5",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-playwright": "^2.4.1",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  }
+}
