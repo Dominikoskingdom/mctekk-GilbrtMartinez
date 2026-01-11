@@ -1,5 +1,3 @@
-
-````markdown
 # SauceDemo Playwright Automation – Sr. QA Technical Test
 
 Automated end‑to‑end testing project using **Playwright**, **TypeScript**, and **ESLint**.  
