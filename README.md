@@ -139,7 +139,7 @@ Example of a data‑driven test:
 
 ```ts
 Users.forEach(user => {
-  test(`Login Test: ${user.name} (valid=${user.valid})`, async ({ page }) => {
+  test(`Login Test: ${user.name}`, async ({ page }) => {
     await loginPage.login(user.username, user.password);
     if (user.valid) {
       await expect(page).toHaveURL(/inventory/);
