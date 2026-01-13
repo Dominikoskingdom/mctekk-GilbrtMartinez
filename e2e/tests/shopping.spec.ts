@@ -21,7 +21,6 @@ test.describe('Cart Tests - Data Driven', () => {
       if ( high === 0 ){
         high++      
       }
-      console.log(high)
       for (const product of Products.slice(0, high)) {
         await productsPage.addProductByName(product);
       }
