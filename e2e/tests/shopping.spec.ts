@@ -19,8 +19,9 @@ test.describe('Cart Tests - Data Driven', () => {
       // if ran is = 0 add one to make sure theres no errors 
       let high = Math.floor(Math.random() * 6)
       if ( high === 0 ){
-        high++
+        high++      
       }
+      console.log(high)
       for (const product of Products.slice(0, high)) {
         await productsPage.addProductByName(product);
       }

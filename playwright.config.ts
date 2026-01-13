@@ -18,6 +18,9 @@ export default defineConfig({
     headless: true,
     trace: 'on-first-retry',
     testIdAttribute: 'data-test',
+ // screenshot and record video only when test fails
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
 
   projects: [
